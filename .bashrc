@@ -105,17 +105,27 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# python development aliases
+# Python development aliases
 # activate virtual environment
 alias va='source .venv/bin/activate'
 # deactivate virtual environment
 alias vd='deactivate'
 
-# git aliases
+# Git aliases
 alias gs='git status'
 alias ga='git add'
 alias gc='git cz' # requires commitizen to be installed
 alias gp='git push'
+
+# Tmux aliases
+alias tkill='tmux kill-ses -t'
+alias tls='tmux ls'
+alias ta='tmux attach -t'
+alias sourcetmux='tmux source ~/.tmux.conf'
+
+# Miscellaneous aliases
+alias nvimconf='cd ~/.config/nvim/ && nvim init.lua'
+
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -146,4 +156,4 @@ export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
 # set preferred editor
-EDITOR=/usr/bin/nvim
+export EDITOR=/usr/bin/nvim
