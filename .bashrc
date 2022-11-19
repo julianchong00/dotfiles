@@ -125,6 +125,7 @@ alias sourcetmux='tmux source ~/.tmux.conf'
 
 # Miscellaneous aliases
 alias nvimconf='cd ~/.config/nvim/ && nvim init.lua'
+alias portfolio='cd ~/Programming/personal/portfolio/blog/'
 
 
 # enable programmable completion features (you don't need to enable
