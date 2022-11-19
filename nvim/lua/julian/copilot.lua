@@ -6,8 +6,13 @@ vim.g.copilot_filetypes = { xml = false }
 -- vim.g.copilot_filetypes = { ["*"] = false, python = true }
 
 -- imap <silent><script><expr> <C-a> copilot#Accept("\<CR>")
--- vim.g.copilot_no_tab_map = true
--- vim.api.nvim_set_keymap("i", "<C-a>", ":copilot#Accept('\\<CR>')<CR>", { silent = true })
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
+vim.api.nvim_set_keymap("i", "<C-J>", "copilot#Accept('\\<CR>')", { silent = true, expr = true })
+
+vim.g.copilot_filetypes = {
+    markdown = true,
+}
 
 -- <C-]>                   Dismiss the current suggestion.
 -- <Plug>(copilot-dismiss)

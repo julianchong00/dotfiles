@@ -61,6 +61,7 @@ return packer.startup(function(use)
     -- Colorschemes
     -- use "lunarvim/colorschemes"     -- a bunch of color schemes to try out
     use "folke/tokyonight.nvim"
+    use "catppuccin/nvim"
 
     -- Completion plugins
     use "hrsh7th/nvim-cmp"          -- completion plugin
@@ -102,6 +103,9 @@ return packer.startup(function(use)
     -- Tree Explorer
     use "nvim-tree/nvim-web-devicons"   -- file icons for nvim-tree
     use "nvim-tree/nvim-tree.lua"       -- file explorer for neovim
+
+    -- Github Copilot
+    use "github/copilot.vim"
 
     -- Automatically setup your configuation after cloning packer.nvim
     -- Put this at the end after all plugins
