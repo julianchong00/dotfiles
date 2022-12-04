@@ -107,6 +107,9 @@ return packer.startup(function(use)
     -- Github Copilot
     use "github/copilot.vim"
 
+    -- Vim be good
+    use "ThePrimeagen/vim-be-good"
+
     -- Automatically setup your configuation after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
