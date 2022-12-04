@@ -31,6 +31,10 @@ keymap("n", "<C-j>", "<C-w>j", opts) -- select lower window
 keymap("n", "<C-k>", "<C-w>k", opts) -- select upper window
 keymap("n", "<C-l>", "<C-w>l", opts) -- select right window
 
+-- Ctrl + [du] to go up and down file
+keymap("n", "<C-u>", "<C-u>zz", opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+
 -- Open netrw on the left side of editor
 --[[ keymap("n", "<leader>e", ":Lexplore 30<CR>", opts) ]]
 
